@@ -1,0 +1,76 @@
+/* ✅ Mobile version */
+@media (max-width: 768px) {
+
+  /* Hero section → already stacking correctly */
+  .hero .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero .card {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+.hero  .card h3 { font-size: 15px; }
+  .hero.card p { font-size: 13px; line-height: 1.4; }
+  /* Booking section → same behavior as facility */
+  .booking-card {
+    display: flex;
+    flex-direction: column;   /* stack cards vertically */
+    gap: 12px;
+  }
+ .booking-card {
+    width: 100%;              /* full phone width */
+    max-width: 100%;
+    margin: 12px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;             /* auto height so details don’t cut */
+    overflow: visible;
+    word-wrap: break-word;
+  }
+  .booking-card h3 {
+    font-size: 15px;          /* smaller heading */
+    font-weight: 600;
+  }
+  .booking-card p {
+    font-size: 13px;          /* smaller text */
+    line-height: 1.4;
+    color: #333;
+    white-space: normal;
+  }
+
+  /* Facility section → already correct */
+  .facility-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 12px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .facility-card h3 { font-size: 15px; }
+  .facility-card p { font-size: 13px; line-height: 1.4; }
+
+  /* Intro section → stack like hero */
+  .card {
+    width: 100%;
+    max-width: 100%;
+    margin: 12px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .card h3 { font-size: 15px; }
+  .card p { font-size: 13px; line-height: 1.4; }
+}
+
+/* Prevent zooming */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
